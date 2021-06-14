@@ -1,0 +1,42 @@
+{% extends 'dashboard/dashboard_base.html' %}
+{% block body %}
+<div class="container justify-content-center position-relative m-5">
+<form>
+    <div class="form-row">
+        <div class="form-group col-md-5">
+            <label for="fname">First Name</label>
+            <input type="text" class="form-control" id="fname" placeholder="Your Name">
+        </div>
+        <div class="form-group col-md-5">
+            <label for="lname">Last Name</label>
+            <input type="text" class="form-control" id="lname" placeholder="Your Last Name">
+        </div>
+        <div class="form-group col-md-5">
+            <label for="ncode">National Code</label>
+            <input type="text" class="form-control" id="ncode" placeholder="Your National Code">
+        </div>
+        <div class="form-group col-md-5">
+            <label for="inputPassword4">Password</label>
+            <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+        </div>
+        <div class="form-group col-md-5">
+            <label for="bdate">Birthday Date</label>
+            <input type="date" class="form-control" id="bdate" placeholder="2000/04/31">
+        </div>
+        <div class="form-group col-md-5">
+            <label for="phonenum">Phone Number</label>
+            <input type="phone" class="form-control" id="phonenum" placeholder="0912432...">
+        </div>
+        <div class="form-group col-md-5">
+            <label for="phonenum">Phone Number</label>
+            <input type="phone" class="form-control" id="phonenum" placeholder="0912432...">
+        </div>
+        <div class="form-group col-md-5">
+            <label for="email">Email</label>
+            <input type="Email" class="form-control" id="email" placeholder="example@gmail.com">
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Register</button>
+</form>
+</div>
+{% endblock %}

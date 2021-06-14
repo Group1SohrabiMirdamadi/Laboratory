@@ -1,0 +1,50 @@
+{% extends 'dashboard/dashboard_base.html' %}
+{% block body %}
+<div class="container justify-content-center position-relative m-5">
+<form action="{{ url_for('reg_employ') }}" method='POST'>
+    <div class="form-row">
+        <div class="form-group col-md-5">
+            <label for="fname">First Name</label>
+            <input type="text" class="form-control" id="fname" name="fname" placeholder="Your Name">
+        </div>
+        <div class="form-group col-md-5">
+            <label for="lname">Last Name</label>
+            <input type="text" class="form-control" id="lname" name="lname" placeholder="Your Last Name">
+        </div>
+        <div class="form-group col-md-5">
+            <label for="ncode">National Code</label>
+            <input type="text" class="form-control" id="ncode"  name="ncode" placeholder="Your National Code">
+        </div>
+        <div class="form-group col-md-5">
+            <label for="inputPassword4">Password</label>
+            <input type="password" class="form-control" id="inputPassword4" name="pass" placeholder="Password">
+        </div>
+        <div class="form-group col-md-5">
+            <label for="bdate">Birthday Date</label>
+            <input type="date" class="form-control" id="bdate" name="bdate" placeholder="2000/04/31">
+        </div>
+        <div class="form-group col-md-5">
+            <label for="phonenum">Phone Number</label>
+            <input type="phone" class="form-control" id="phonenum" name="phone" placeholder="0912432...">
+        </div>
+        <div class="form-group col-md-5">
+            <label for="email">Email</label>
+            <input type="Email" class="form-control" id="email" name="email" placeholder="example@gmail.com">
+        </div>
+        <div class="form-group col-md-5">
+            <label for="adress">Adress</label>
+            <input type="text" class="form-control" id="adress" name="address" placeholder=". . .">
+        </div>
+        <div class="form-group col-md-5">
+            <label for="e_q">employee quantificatior</label>
+            <input type="text" class="form-control" id="e_q" placeholder=". . .">
+        </div>
+        <div class="form-group col-md-5">
+            <label for="e_w_p">worked here from </label>
+            <input type="date" class="form-control" id="e_w_p"  placeholder="from 2010/04/31">
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary" value="Submit">Register</button>
+</form>
+</div>
+{% endblock %}
